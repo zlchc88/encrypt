@@ -55,7 +55,7 @@ class Haes{
 		return bin2hex($strEncrypt);
 	}
 	public static function deCBCcryptHex($data){
-		$plaintext=pack('H*',$data);
+		$data=pack('H*',$data);
 		$strDecrypt=openssl_decrypt($data,self::$method,self::$key,OPENSSL_RAW_DATA,self::$iv);
 		if(!$strDecrypt){
 			$setErrorMessage[]=openssl_error_string();
