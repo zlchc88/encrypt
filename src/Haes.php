@@ -1,6 +1,6 @@
 <?php
-namespace hcgrzh\haes;
-class Haes{
+namespace hcgrzh\encrypt;
+class Hencrypt{
 	//密码学方式
 	private static $method='aes-256-cbc';
 	private static $iv="1234567890abcdef";
